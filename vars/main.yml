@@ -1,2 +1,26 @@
 ---
 # vars file for ansible_galaxy_role_ubuntu_common
+
+etc:
+  profile:
+    file:
+      path: /etc/profile
+
+vim:
+  rc:
+    file:
+      path: /etc/vim/vimrc
+  rc_ext:
+    dist:
+      file:
+        path: /etc/vim/vimrc.local
+
+timesyncd:
+  file:
+    path: /etc/systemd/timesyncd.conf
+
+ntp:
+  server: ntp.nict.jp
+
+timezone:
+  name: Asia/Tokyo
