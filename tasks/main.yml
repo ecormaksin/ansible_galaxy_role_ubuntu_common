@@ -6,15 +6,15 @@
   ansible.builtin.apt:
     update_cache: yes
 
-- name: "common: apt | upgrade packages"
-  become: true
-  ansible.builtin.apt:
-    upgrade: dist
+# - name: "common: apt | upgrade packages"
+#   become: true
+#   ansible.builtin.apt:
+#     upgrade: dist
 
-- name: "common: apt | autoremove packages"
-  become: true
-  ansible.builtin.apt:
-    autoremove: yes
+# - name: "common: apt | autoremove packages"
+#   become: true
+#   ansible.builtin.apt:
+#     autoremove: yes
 
 - name: "common: vim | install package"
   become: true
